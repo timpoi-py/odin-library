@@ -44,15 +44,18 @@
               id="book-pages"
               placeholder="No. of Pages"
             />
-            <select name="progress" id="progress" aria-placeholder="">
-              <option value="not yet started">Not yet started</option>
-              <option value="reading">Reading</option>
+            <select name="progress" id="progress">
+              <option id="progress_opt" value="" disabled selected>
+                Progress
+              </option>
+              <option value="Not yet started">Not yet started</option>
+              <option value="Reading">Reading</option>
               <option value="Finished">Finished</option>
             </select>
           </form>
           <div class="btns">
-            <input type="submit" form="book__form" value="Submit" />
-            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" id="submit-btn" />
+            <input type="reset" form="book__form" value="Reset" />
           </div>
         </div>
 

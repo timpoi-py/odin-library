@@ -57,6 +57,9 @@ body {
 .main__container .book__forms #book__form select #progress_opt {
   display: none;
 }
+.main__container .book__forms #book__form select {
+  background-color: hsl(0deg, 0%, 98%);
+}
 .main__container .book__forms #book__form input:focus {
   outline: none;
 }
@@ -73,6 +76,9 @@ body {
 .main__container .book__forms .btns input[type=submit]:hover {
   scale: 1.05;
 }
+.main__container .book__forms .btns input[type=reset] {
+  background-color: hsl(0deg, 0%, 98%);
+}
 .main__container .book__forms .btns input[type=reset]:hover {
   scale: 1.05;
 }
@@ -85,6 +91,33 @@ body {
   .main__container .book__forms #book__form {
     grid-template-columns: 1fr;
   }
+}
+.main__container .book__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(300px, 25%), 1fr));
+  padding: 0.5em 0;
+}
+.main__container .book__cards .book__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-self: stretch;
+  margin: 0.5em;
+  padding: 1em;
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 0.8em;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+}
+.main__container .book__cards .book__card h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.main__container .book__cards .book__card p:nth-of-type(1) {
+  font-size: 1em;
+  font-style: italic;
+}
+.main__container .book__cards .book__card p:nth-of-type(2)::after {
+  content: " page/s";
 }
 
 .footer {
