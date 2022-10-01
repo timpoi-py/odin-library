@@ -90,8 +90,5 @@ function deletingBookCard() {
 submitBtn.onclick = () => {
   createBookCard();
   resetForm();
-};
-
-bookCards.onmouseover = () => {
   deletingBookCard();
 };
