@@ -34,8 +34,8 @@ function resetForm() {
 
 function addBtnsInCard(bookCard) {
   let btnDiv = document.createElement("div");
-  let editBtn = document.createElement("button");
-  let deleteBtn = document.createElement("button");
+  let editBtn = document.createElement("div");
+  let deleteBtn = document.createElement("div");
 
   bookCard.appendChild(btnDiv);
   btnDiv.appendChild(editBtn);
@@ -92,3 +92,5 @@ submitBtn.onclick = () => {
 bookCards.addEventListener("pointerdown", (e) => {
   deletingBookCard(e);
 });
+
+window.onpointerdown = (e) => console.log(e);
