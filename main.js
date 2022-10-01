@@ -90,5 +90,8 @@ function deletingBookCard() {
 submitBtn.onclick = () => {
   createBookCard();
   resetForm();
-  deletingBookCard();
+
+  setTimeout(() => {
+    deletingBookCard();
+  }, 500);
 };
