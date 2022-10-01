@@ -89,8 +89,10 @@ submitBtn.onclick = () => {
   resetForm();
 };
 
-bookCards.addEventListener("pointerdown", (e) => {
-  deletingBookCard(e);
-});
-
-window.onpointerdown = (e) => console.log(e);
+bookCards.addEventListener(
+  "pointerdown",
+  (e) => {
+    deletingBookCard(e);
+  },
+  false
+);
