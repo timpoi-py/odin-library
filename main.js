@@ -77,7 +77,21 @@ function createBookCard() {
   }
 }
 
+function deletingBookCard() {
+  let deleteBtns = document.querySelectorAll(".delete-btn");
+  deleteBtns.forEach((btn) => {
+    btn.onclick = (e) => {
+      let card = e.path[2];
+      card.remove();
+    };
+  });
+}
+
 submitBtn.onclick = () => {
   createBookCard();
   resetForm();
+};
+
+bookCards.onmouseover = () => {
+  deletingBookCard();
 };
