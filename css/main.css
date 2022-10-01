@@ -121,6 +121,7 @@ body {
 .main__container .book__cards .book__card h3 {
   font-weight: 600;
   font-size: 1.5em;
+  word-wrap: break-word;
 }
 .main__container .book__cards .book__card p:nth-of-type(1) {
   font-size: 1em;
@@ -133,6 +134,7 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 0.5em;
+  margin-top: auto;
 }
 .main__container .book__cards .book__card .btns input {
   width: 8ch;
