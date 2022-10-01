@@ -80,18 +80,16 @@ function createBookCard() {
 function deletingBookCard() {
   let deleteBtns = document.querySelectorAll(".delete-btn");
   deleteBtns.forEach((btn) => {
-    btn.onclick = (e) => {
+    btn.onpointerdown = (e) => {
       let card = e.path[2];
       card.remove();
     };
   });
 }
 
-submitBtn.onclick = () => {
+submitBtn.onpointerdown = () => {
   createBookCard();
   resetForm();
 
-  setTimeout(() => {
-    deletingBookCard();
-  }, 500);
+  deletingBookCard();
 };
