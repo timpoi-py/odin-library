@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+    <title>TPOI Library</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <h1>Library</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container main__container">
+        <div class="book__forms">
+          <form id="book__form">
+            <input
+              type="text"
+              name="book-title"
+              id="book-title"
+              placeholder="Book Title"
+            />
+            <input
+              type="text"
+              name="book-author"
+              id="book-author"
+              placeholder="Author"
+            />
+            <input
+              type="number"
+              min="0"
+              name="book-pages"
+              id="book-pages"
+              placeholder="No. of Pages"
+            />
+            <select name="progress" id="progress" aria-placeholder="">
+              <option value="not yet started">Not yet started</option>
+              <option value="reading">Reading</option>
+              <option value="Finished">Finished</option>
+            </select>
+          </form>
+          <div class="btns">
+            <input type="submit" form="book__form" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </div>
+
+        <div class="book__cards"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <p>
+          Created by <a href="https://github.com/timpoi-py">timpoi-py</a> for
+          <a href="https://www.theodinproject.com/">The Odin Project</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
