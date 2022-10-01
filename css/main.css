@@ -59,6 +59,8 @@ body {
 }
 .main__container .book__forms #book__form select {
   background-color: hsl(0deg, 0%, 98%);
+  border-radius: 0;
+  color: #363838;
 }
 .main__container .book__forms #book__form input:focus {
   outline: none;
@@ -78,6 +80,7 @@ body {
 }
 .main__container .book__forms .btns input[type=reset] {
   background-color: hsl(0deg, 0%, 98%);
+  color: #363838;
 }
 .main__container .book__forms .btns input[type=reset]:hover {
   scale: 1.05;
