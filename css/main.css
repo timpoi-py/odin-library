@@ -76,6 +76,7 @@ body {
   width: 10ch;
   padding: 0.4em 0.8em;
   font-weight: 600;
+  cursor: pointer;
 }
 .main__container .book__forms .btns input[type=submit] {
   color: white;
@@ -133,7 +134,7 @@ body {
   justify-content: flex-end;
   gap: 0.5em;
 }
-.main__container .book__cards .book__card .btns button {
+.main__container .book__cards .book__card .btns div {
   width: 8ch;
   padding: 0.3em 0.5em;
   font-size: 0.9em;
@@ -141,8 +142,10 @@ body {
   border: none;
   border-radius: 0.2em;
   color: hsl(0deg, 0%, 98%);
+  text-align: center;
+  cursor: pointer;
 }
-.main__container .book__cards .book__card .btns button:hover {
+.main__container .book__cards .book__card .btns div:hover {
   scale: 1.02;
 }
 .main__container .book__cards .book__card .btns .edit-btn {
