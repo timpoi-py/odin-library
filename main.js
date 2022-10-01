@@ -32,28 +32,6 @@ function resetForm() {
   bookProgress.value = "";
 }
 
-function addBtnsInCard(bookCard) {
-  let btnDiv = document.createElement("div");
-  let editBtn = document.createElement("input");
-  let deleteBtn = document.createElement("input");
-
-  editBtn.setAttribute("type", "button");
-  deleteBtn.setAttribute("type", "button");
-  editBtn.setAttribute("value", "edit");
-  deleteBtn.setAttribute("value", "delete");
-
-  bookCard.appendChild(btnDiv);
-  btnDiv.appendChild(editBtn);
-  btnDiv.appendChild(deleteBtn);
-
-  btnDiv.classList.add("btns");
-  editBtn.classList.add("edit-btn");
-  deleteBtn.classList.add("delete-btn");
-
-  deleteBtn.textContent = "delete";
-  editBtn.textContent = "edit";
-}
-
 function createBookCard() {
   let book = creatingNewBook();
 
@@ -78,26 +56,35 @@ function createBookCard() {
     bookCard.appendChild(titleElem);
     bookCard.appendChild(authorElem);
     bookCard.appendChild(pagesElem);
-    addBtnsInCard(bookCard);
+
+    let btnDiv = document.createElement("div");
+    let editBtn = document.createElement("input");
+    let deleteBtn = document.createElement("input");
+
+    deleteBtn.onclick = () => {
+      deletingBookCard(bookCard);
+    };
+
+    editBtn.setAttribute("type", "button");
+    deleteBtn.setAttribute("type", "button");
+    editBtn.setAttribute("value", "edit");
+    deleteBtn.setAttribute("value", "delete");
+
+    bookCard.appendChild(btnDiv);
+    btnDiv.appendChild(editBtn);
+    btnDiv.appendChild(deleteBtn);
+
+    btnDiv.classList.add("btns");
+    editBtn.classList.add("edit-btn");
+    deleteBtn.classList.add("delete-btn");
   }
 }
 
-function deletingBookCard(e) {
-  if (e.target.classList.value == "delete-btn") {
-    let html = e.path[2];
-    html.remove();
-  }
+function deletingBookCard(bookCard) {
+  bookCard.remove();
 }
 
 submitBtn.onclick = () => {
   createBookCard();
   resetForm();
 };
-
-bookCards.addEventListener(
-  "click",
-  (e) => {
-    deletingBookCard(e);
-  },
-  false
-);
