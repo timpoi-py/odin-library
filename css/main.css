@@ -65,6 +65,12 @@ body {
 .main__container .book__forms #book__form input:focus {
   outline: none;
 }
+.main__container .book__forms .btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+}
 .main__container .book__forms .btns input {
   border: none;
   width: 10ch;
@@ -97,7 +103,7 @@ body {
 }
 .main__container .book__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(max(300px, 25%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(max(400px, 30%), 1fr));
   padding: 0.5em 0;
 }
 .main__container .book__cards .book__card {
@@ -121,6 +127,29 @@ body {
 }
 .main__container .book__cards .book__card p:nth-of-type(2)::after {
   content: " page/s";
+}
+.main__container .book__cards .book__card .btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+.main__container .book__cards .book__card .btns button {
+  width: 8ch;
+  padding: 0.3em 0.5em;
+  font-size: 0.9em;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.2em;
+  color: hsl(0deg, 0%, 98%);
+}
+.main__container .book__cards .book__card .btns button:hover {
+  scale: 1.02;
+}
+.main__container .book__cards .book__card .btns .edit-btn {
+  background-color: #363838;
+}
+.main__container .book__cards .book__card .btns .delete-btn {
+  background-color: rgb(186, 0, 0);
 }
 
 .footer {

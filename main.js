@@ -32,6 +32,23 @@ function resetForm() {
   bookProgress.value = "";
 }
 
+function addBtnsInCard(bookCard) {
+  let btnDiv = document.createElement("div");
+  let editBtn = document.createElement("button");
+  let deleteBtn = document.createElement("button");
+
+  bookCard.appendChild(btnDiv);
+  btnDiv.appendChild(editBtn);
+  btnDiv.appendChild(deleteBtn);
+
+  btnDiv.classList.add("btns");
+  editBtn.classList.add("edit-btn");
+  deleteBtn.classList.add("delete-btn");
+
+  deleteBtn.textContent = "delete";
+  editBtn.textContent = "edit";
+}
+
 function createBookCard() {
   let book = creatingNewBook();
 
@@ -56,6 +73,7 @@ function createBookCard() {
     bookCard.appendChild(titleElem);
     bookCard.appendChild(authorElem);
     bookCard.appendChild(pagesElem);
+    addBtnsInCard(bookCard);
   }
 }
 
