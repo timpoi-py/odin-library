@@ -134,7 +134,7 @@ body {
   justify-content: flex-end;
   gap: 0.5em;
 }
-.main__container .book__cards .book__card .btns div {
+.main__container .book__cards .book__card .btns input {
   width: 8ch;
   padding: 0.3em 0.5em;
   font-size: 0.9em;
@@ -145,7 +145,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
-.main__container .book__cards .book__card .btns div:hover {
+.main__container .book__cards .book__card .btns input:hover {
   scale: 1.02;
 }
 .main__container .book__cards .book__card .btns .edit-btn {
