@@ -104,7 +104,7 @@ body {
 }
 .main__container .book__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(max(400px, 30%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(max(300px, 30%), 1fr));
   padding: 0.5em 0;
 }
 .main__container .book__cards .book__card {
