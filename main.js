@@ -94,6 +94,10 @@ function createBookCard() {
       editListProgress(progressBtn, titleElem, authorElem, pagesElem);
       editDataProgress(bookCard, progressBtn);
     };
+
+    // editBtn.onclick = () => {
+    //   editBtnClicked(bookCard, titleElem, authorElem, pagesElem, btnDiv);
+    // };
   }
 }
 
@@ -142,6 +146,54 @@ function editListProgress(progressBtn, title, author, pages) {
 function editDataProgress(bookCard, progressBtn) {
   bookCard.dataset.progress = progressBtn.getAttribute("value");
 }
+
+// function hideBooksInfo(title, author, pages, btns) {
+//   title.style.display = "none";
+//   author.style.display = "none";
+//   pages.style.display = "none";
+//   btns.style.display = "none";
+// }
+
+// function addFinishEditBtn(btnDiv) {
+//   let btn = document.createElement("input");
+
+//   btnDiv.appendChild(btn);
+
+//   btn.setAttribute("type", "button");
+//   btn.setAttribute("value", "Okay");
+//   btn.classList.add("edit-okay");
+// }
+
+// function addInput(bookCard, titleElem, authorElem, pagesElem) {
+//   let editDiv = document.createElement("div");
+//   let titleInput = document.createElement("input");
+//   let authorInput = document.createElement("input");
+//   let pagesInput = document.createElement("input");
+//   let btnDiv = document.createElement("div");
+
+//   editDiv.classList.add("edit-div");
+
+//   titleInput.setAttribute("type", "text");
+//   authorInput.setAttribute("type", "text");
+//   pagesInput.setAttribute("type", "number");
+
+//   titleInput.setAttribute("value", titleElem.textContent);
+//   authorInput.setAttribute("value", authorElem.textContent);
+//   pagesInput.setAttribute("value", pagesElem.TextContent);
+
+//   bookCard.appendChild(editDiv);
+//   editDiv.appendChild(titleInput);
+//   editDiv.appendChild(authorInput);
+//   editDiv.appendChild(pagesInput);
+//   editDiv.appendChild(btnDiv);
+
+//   addFinishEditBtn(btnDiv);
+// }
+
+// function editBtnClicked(bookCard, titleElem, authorElem, pagesElem, btns) {
+//   hideBooksInfo(titleElem, authorElem, pagesElem, btns);
+//   addInput(bookCard, titleElem, authorElem, pagesElem);
+// }
 
 submitBtn.onclick = () => {
   AddToList();

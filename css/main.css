@@ -165,7 +165,7 @@ body {
   width: max-content;
 }
 .main__container .book__cards .book__card .btns input[value=Finished] {
-  background-color: rgb(94, 255, 0);
+  background-color: rgb(72, 197, 0);
   margin-right: auto;
   color: black;
   width: -webkit-max-content;
@@ -177,9 +177,25 @@ body {
 }
 .main__container .book__cards .book__card .btns .edit-btn {
   background-color: #363838;
+  display: none;
 }
 .main__container .book__cards .book__card .btns .delete-btn {
   background-color: rgb(186, 0, 0);
+}
+.main__container .book__cards .book__card .edit-div input {
+  width: 100%;
+}
+.main__container .book__cards .book__card .edit-div .edit-okay {
+  width: 100%;
+  padding: 0.3em 0.5em;
+  font-size: 0.9em;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.2em;
+  color: black;
+  text-align: center;
+  background-color: rgb(72, 197, 0);
+  cursor: pointer;
 }
 
 .footer {
