@@ -135,6 +135,7 @@ body {
   justify-content: flex-end;
   gap: 0.5em;
   margin-top: auto;
+  padding-top: 1em;
 }
 .main__container .book__cards .book__card .btns input {
   width: 8ch;
@@ -146,6 +147,30 @@ body {
   color: hsl(0deg, 0%, 98%);
   text-align: center;
   cursor: pointer;
+}
+.main__container .book__cards .book__card .btns input[value="Not yet started"] {
+  background-color: #d7dede;
+  margin-right: auto;
+  color: black;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.main__container .book__cards .book__card .btns input[value=Reading] {
+  background-color: rgb(255, 230, 0);
+  margin-right: auto;
+  color: black;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.main__container .book__cards .book__card .btns input[value=Finished] {
+  background-color: rgb(94, 255, 0);
+  margin-right: auto;
+  color: black;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .main__container .book__cards .book__card .btns input:hover {
   scale: 1.02;
